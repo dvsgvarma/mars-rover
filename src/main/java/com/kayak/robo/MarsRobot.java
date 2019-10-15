@@ -80,8 +80,6 @@ public class MarsRobot {
      * The method runs instructive commands for rover EX: LFFFRFFFRRFFF,
      * where "L" is a "turn 90 degrees left", "R" is a "turn 90 degrees right",
      * and "F" is "go forward one space.
-     *
-     * @param command
      */
     public void runCommand(final String command) {
         if (command == null) {
