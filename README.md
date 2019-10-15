@@ -1,6 +1,9 @@
 # mars-rover
 Robot on mars
 
-Prerequisites:
+Tech stack i used for this project are:
 
-1) Install Docker 
+- Google code style 
+- Lombok
+- Docker
+- Junit
