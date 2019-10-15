@@ -34,7 +34,8 @@ Docker Env : You need to install docker on your local machine
 Mac: https://docs.docker.com/docker-for-windows/
 Win: https://docs.docker.com/docker-for-mac/
 
-Run the below command 
+Run the below command or we can just run all commands above inside the running container as well to check the results
+ with out any major setup
 ```
 docker build ./ -t mars-rover
 docker run mars-rover
