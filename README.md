@@ -3,7 +3,7 @@ Robot on mars
 
 I presume where ever the rover landed is north and location (x:0,y:0) 
 
-Tech stack i used for this project are:
+Tech stack i used for this project
 
 - Google code style 
 - Lombok
