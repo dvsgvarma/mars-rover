@@ -5,12 +5,12 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-public class MarsRobot {
+public class MarsRover {
 
     private Point location;
     private Direction direction;
 
-    public MarsRobot() {
+    public MarsRover() {
         location = new Point(0, 0);
         direction = Direction.NORTH;
     }

@@ -13,7 +13,7 @@ import java.util.Collection;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
-public class MarsRobotTest {
+public class MarsRoverTest {
 
     private String command;
     private Point endPoint;
@@ -22,7 +22,7 @@ public class MarsRobotTest {
     @Rule
     public ExpectedException expectedException = ExpectedException.none();
 
-    public MarsRobotTest(final String command, final Point endPoint, final Direction endDirection, final Class<? extends Throwable> exception) {
+    public MarsRoverTest(final String command, final Point endPoint, final Direction endDirection, final Class<? extends Throwable> exception) {
         this.command = command;
         this.endPoint = endPoint;
         this.endDirection = endDirection;
@@ -35,7 +35,7 @@ public class MarsRobotTest {
 
     @Test
     public void testRobotsLocationShouldMatch() {
-        final MarsRobot robot = new MarsRobot();
+        final MarsRover robot = new MarsRover();
 
         robot.runCommand(command);
 
@@ -43,12 +43,12 @@ public class MarsRobotTest {
         assertDirection(endDirection, robot);
     }
 
-    private void assertLocation(final Point point, final MarsRobot robot) {
+    private void assertLocation(final Point point, final MarsRover robot) {
         assertEquals(point.getX(), robot.getLocation().getX());
         assertEquals(point.getY(), robot.getLocation().getY());
     }
 
-    private void assertDirection(final Direction direction, final MarsRobot robot) {
+    private void assertDirection(final Direction direction, final MarsRover robot) {
         assertEquals(direction, robot.getDirection());
     }
 
